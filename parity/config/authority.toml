@@ -1,0 +1,37 @@
+[parity]
+chain = "/parity/config/chain.json"
+
+[rpc]
+interface = "0.0.0.0"
+cors = ["all"]
+hosts = ["all"]
+apis = ["web3", "eth", "net", "parity", "traces", "rpc", "personal", "parity_accounts", "signer", "parity_set"]
+
+
+
+[network]
+#bootnodes = [
+#"enode://317f835d386561f75d24aa90258b0e26afb9df2c8c23dff27862682a32f0ee20275e5762bf2704f3ce48bbebafd33ee6155e4c38b0f1f940e99affa86c12f955@206.189.46.234:30303",
+#"enode://115305d621093f755eda0f050bd57e032d84ad790518b47bd1df43b03c9b76b04a55283570a22119ed6f81dedc27244b70d6b4e94dbad2595101652ee81aed3d@206.189.33.87:30303",
+#"enode://f48a74b0ca40d825b330a911e726a1bb398623071430c664eef1e93480903e1b9c0399935bc798b90b239ba1965eed076dd84b31efdb7a8f0edbd769677f8a7d@206.189.32.156:30303",
+#"enode://18e700b08da8574af12b23271d46c14e9f7fe07e00660de96b81c83f5c57915a8c8fab3c44f0d24cb668f8aedc436f604d0f52859fdbe4725817e8a411274e5a@206.189.44.123:30303"
+#]
+
+[account]
+password = ["/parity/authority.pwd"]
+
+[mining]
+usd_per_tx = "0"
+force_sealing = true
+reseal_min_period = 4000
+reseal_max_period = 60000
+reseal_on_txs = "none"
+gas_floor_target = "0x165A0BC00"
+tx_queue_size = 16384
+tx_queue_mem_limit = 4096
+
+
+[dapps]
+
+[ui]
+interface = "all"

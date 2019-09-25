@@ -1,0 +1,26 @@
+
+
+[parity]
+chain = "/parity/config/chain.json"
+
+[rpc]
+interface = "0.0.0.0"
+cors = ["all"]
+hosts = ["all"]
+apis = ["web3", "eth", "net", "parity", "traces", "rpc", "personal", "parity_accounts", "signer", "parity_set"]
+
+
+[network]
+
+bootnodes = [
+    
+    #"enode://704f858c774bd9447a31d27bd03b2449b2b7ee7a7f5ff8ba60ac5bc92f13d86c9fdf384f11ba9d6674426829637729d7b7a59211a9fb45a1075f055507957bbf@172.16.0.13:30303",
+    #"enode://5533e6e76e9e957a905c1244156724c68d6aed30a9345df746f8994447454940e199f368ed90aaf66bad363f73e6394fd63bb85145c6dd539a12be2cb56829ab@172.16.0.14:30303",
+    #"enode://8f8699b055390fe09994154fd5243f0f2d6e9fcf51e836e1a7cfb367a8f78e9ed16c311e3fb6095261d19bd4da4dd18239861c7fafc83404f9fd893f43fa4a4c@172.16.0.15:30303"
+
+]
+
+
+
+[ui]
+interface = "0.0.0.0"
